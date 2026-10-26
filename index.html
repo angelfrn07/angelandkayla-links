@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Angel &amp; Kayla Mendoza</title>
+<meta name="description" content="Faith-first real estate family in Amarillo, Texas. Creative finance, short-term rentals, AI, family, and the mat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEEDE8; --paper:#FBFBF8; --ink:#1A1A1D; --mute:#5F5E5A; --line:#D3D1CA;
+  --cf:#1F6F4A; --str:#B8452B; --ai:#2F5BEA; --fam:#B98A1E; --bjj:#5B3A8C;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#141416; --paper:#1D1D21; --ink:#EDECE7; --mute:#A3A19A; --line:#34343A;
+  --cf:#3FAE78; --str:#E0694C; --ai:#6C8CFF; --fam:#E0B447; --bjj:#A07BE0; color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 Barlow,system-ui,-apple-system,sans-serif;
+  padding:env(safe-area-inset-top,0px) 16px calc(40px + env(safe-area-inset-bottom,0px))}
+.wrap{max-width:520px;margin:0 auto}
+header{padding:34px 0 18px;display:grid;gap:10px}
+.fives{display:grid;grid-template-columns:repeat(5,1fr);height:8px;border-radius:2px;overflow:hidden}
+.fives i:nth-child(1){background:var(--fam)}.fives i:nth-child(2){background:var(--bjj)}.fives i:nth-child(3){background:var(--str)}.fives i:nth-child(4){background:var(--cf)}.fives i:nth-child(5){background:var(--ai)}
+h1{margin:6px 0 0;font:800 clamp(44px,13vw,64px)/.88 "Barlow Condensed",Impact,sans-serif;letter-spacing:-.5px;text-transform:uppercase}
+.tag{margin:0;font-size:17px;color:var(--mute);max-width:34ch}
+.fword{font:600 14px/1.3 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.feature{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;text-decoration:none;color:var(--bg);background:var(--ink);padding:18px 18px;border-radius:6px;margin:8px 0 6px}
+.feature b{display:block;font:800 26px/1 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.feature span{font-size:14px;opacity:.8}
+.feature svg{width:28px;height:28px}
+section{margin-top:26px}
+h2{margin:0 0 4px;font:800 22px/1 "Barlow Condensed",sans-serif;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:14px;height:14px;background:var(--c);border-radius:2px;flex:none}
+.sub{margin:0 0 8px;font-size:14px;color:var(--mute)}
+.ln{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:14px 2px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.ln:last-child{border-bottom:1px solid var(--line)}
+.ln b{font-weight:600;display:block}
+.ln small{color:var(--mute);font-size:14px}
+.ln .go{font:800 22px/1 "Barlow Condensed",sans-serif;color:var(--c)}
+a.ln:hover b,a.ln:focus-visible b{text-decoration:underline;text-decoration-color:var(--c);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+.kw{font:800 17px/1 "Barlow Condensed",sans-serif;letter-spacing:.06em;border:2px solid var(--c);color:var(--c);padding:5px 8px;border-radius:3px}
+.aff{font-size:12px;color:var(--mute);letter-spacing:.02em}
+.disclose{margin-top:30px;padding:14px 0;border-top:3px solid var(--ink);font-size:14px}
+.disclose p{margin:0 0 6px}
+footer{margin-top:18px;font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="fives" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="fword">Faith · Family · Fitness · Finances · Fun</div>
+    <h1>Angel &amp;<br>Kayla Mendoza</h1>
+    <p class="tag">Faith-first real estate family from Amarillo, Texas. Married, three boys, building it together.</p>
+  </header>
+
+  <a class="feature" href="https://www.thevisionandvows.com" rel="noopener">
+    <div><b>Vision &amp; Vows</b><span>Our podcast on marriage, faith and building a business together</span></div>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+  </a>
+
+  <main id="groups"></main>
+
+  <div class="disclose" id="disclose">
+    <p><b>I earn a commission if you join or buy through my link.</b></p>
+    <p class="aff">I only link tools I use in our own business. Nothing here is a promise of results. Real estate and business outcomes vary.</p>
+  </div>
+
+  <footer>Amarillo, Texas</footer>
+</div>
+
+<script>
+/* One place to edit. A link with url:"" stays hidden until its URL is filled in. */
+const GROUPS = [
+  {key:"cf", name:"Creative Finance", note:"Buying houses with terms, not just banks.", links:[
+    {label:"The subject-to community I learned in", sub:"Affiliate link", url:"", aff:true},
+    {label:"Free seller question list", sub:"Comment on any creative finance video", kw:"TERMS"}
+  ]},
+  {key:"str", name:"STR Playbook", note:"The tools behind our short-term rentals.", links:[
+    {label:"PriceLabs", sub:"Dynamic pricing", url:"", aff:true},
+    {label:"AirDNA", sub:"Market data", url:"", aff:true},
+    {label:"Guesty", sub:"Property management software", url:"", aff:true}
+  ]},
+  {key:"ai", name:"The AI Clone", note:"How a non-coder runs parts of his business with AI.", links:[
+    {label:"Own a business in Amarillo?", sub:"Comment on the AI build video", kw:"BUILD"}
+  ]},
+  {key:"fam", name:"Faith & Family", note:"What keeps us together while we build.", links:[
+    {label:"Vision & Vows podcast", sub:"thevisionandvows.com", url:"https://www.thevisionandvows.com"},
+    {label:"Our 5 F's Sunday check-in questions", sub:"Comment on the check-in video", kw:"5F"}
+  ]},
+  {key:"bjj", name:"Mat & Muscle", note:"Jiu-jitsu three days, lifting three days, 5 AM.", links:[]}
+];
+
+const esc=s=>s.replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+let anyAff=false;
+const html=GROUPS.map(g=>{
+  const rows=g.links.filter(l=>l.kw||l.url).map(l=>{
+    if(l.kw) return `<div class="ln"><div><b>${esc(l.label)}</b><small>${esc(l.sub)}</small></div><span class="kw">${esc(l.kw)}</span></div>`;
+    if(l.aff) anyAff=true;
+    return `<a class="ln" href="${esc(l.url)}" rel="noopener${l.aff?" sponsored":""}"><div><b>${esc(l.label)}</b><small>${esc(l.sub)}${l.aff?' <span class="aff">(commission)</span>':''}</small></div><span class="go" aria-hidden="true">&rarr;</span></a>`;
+  }).join("");
+  if(!rows) return "";
+  return `<section style="--c:var(--${g.key})"><h2>${esc(g.name)}</h2><p class="sub">${esc(g.note)}</p>${rows}</section>`;
+}).join("");
+document.getElementById("groups").innerHTML=html;
+
+</script>
+</body>
+</html>
